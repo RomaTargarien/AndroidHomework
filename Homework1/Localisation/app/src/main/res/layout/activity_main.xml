@@ -30,7 +30,7 @@
         android:layout_marginLeft="62dp"
         android:layout_marginTop="150dp"
         android:text="Product:"
-        android:textColor="#0B0A0A"
+        android:textColor="#FF9800"
         android:textSize="20dp" />
 
     <TextView
@@ -41,7 +41,7 @@
         android:layout_marginTop="10dp"
         android:textSize="20dp"
         android:layout_toLeftOf="@+id/editTextAmount"
-        android:textColor="#0B0A0A"
+        android:textColor="#FF9800"
         android:layout_below="@+id/textViewProduct"/>
 
     <Button
