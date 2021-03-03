@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Localisation</string>
+    <string name="lbl_product">Product:</string>
+    <string name="lbl_amount">Amount:</string>
+
+    <string name="btn_ok">OK</string>
+</resources>

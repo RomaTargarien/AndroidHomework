@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/textViewProduct"/>
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="173dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/textViewProduct"/>
+
+    <TextView
+        android:id="@+id/textViewProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="150dp"
+        android:text="Product:"
+        android:textColor="#0B0A0A"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/editTextAmount"
+        android:textColor="#0B0A0A"
+        android:layout_below="@+id/textViewProduct"/>
+
+    <Button
+        android:id="@+id/buttonEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="en_US"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/en"
+        />
+
+    <Button
+        android:id="@+id/buttonRus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ru_RUS"
+        android:layout_toRightOf="@+id/buttonEn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/icon_rus"/>
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="520dp"
+        android:text="OK"
+        app:backgroundTint="#FF9800" />
+
+</RelativeLayout>

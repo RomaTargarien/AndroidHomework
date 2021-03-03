@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Localisation</string>
+    <string name="lbl_product">Product:</string>
+    <string name="lbl_amount">Amount:</string>
+
+    <string name="btn_ok">OK</string>
+</resources>
