@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#050505">
+
+    <TextView
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="345dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="65dp" />
+
+    <Button
+        android:id="@+id/buttom_crop"
+        android:text="."
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="7dp"/>
+
+    <Button
+        android:id="@+id/buttom_null"
+        android:text="0"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="600dp"
+        android:layout_toRightOf="@+id/buttom_crop"/>
+
+    <Button
+        android:id="@+id/buttom_delete"
+        android:text="Del"
+        android:textSize="25dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF5722"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="600dp"
+        android:layout_toRightOf="@+id/buttom_null"/>
+
+    <Button
+        android:id="@+id/buttom_result"
+        android:text="="
+        android:textSize="55dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#9A9389"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="600dp"
+        android:layout_toRightOf="@+id/buttom_delete"/>
+
+    <Button
+        android:id="@+id/buttom_1"
+        android:text="1"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="507dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_2"
+        android:text="2"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_toRightOf="@+id/buttom_1"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="507dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_3"
+        android:text="3"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_toRightOf="@+id/buttom_2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="507dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_plus"
+        android:text="+"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        android:layout_toRightOf="@+id/buttom_3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="507dp"
+        app:backgroundTint="#9A9389"
+        />
+
+    <Button
+        android:id="@+id/buttom_4"
+        android:text="4"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="414dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_5"
+        android:text="5"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/buttom_4"
+        android:layout_marginTop="414dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_6"
+        android:text="6"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/buttom_5"
+        android:layout_marginTop="414dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_minus"
+        android:text="-"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#9A9389"
+        android:layout_toRightOf="@+id/buttom_6"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="414dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_7"
+        android:text="7"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="321dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_8"
+        android:text="8"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_toRightOf="@+id/buttom_7"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="321dp"
+        />
+    <Button
+        android:id="@+id/buttom_9"
+        android:text="9"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#FF9800"
+        android:layout_toRightOf="@+id/buttom_8"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="321dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_multiplication"
+        android:text="x"
+        android:textSize="35dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#9A9389"
+        android:layout_toRightOf="@+id/buttom_9"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="321dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_AC"
+        android:text="AC"
+        android:textSize="35dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#9A9389"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="228dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_procent"
+        android:text="%"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#9A9389"
+        android:layout_toRightOf="@+id/buttom_plus_minus"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="228dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_division"
+        android:text="/"
+        android:textSize="45dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#9A9389"
+        android:layout_toRightOf="@+id/buttom_procent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="228dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_plus_minus"
+        android:text="+/-"
+        android:textSize="35dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/oval_button"
+        app:backgroundTint="#9C958B"
+        android:layout_toRightOf="@+id/buttom_AC"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="228dp"
+        />
+
+
+
+
+</RelativeLayout>
