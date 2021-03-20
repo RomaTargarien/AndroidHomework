@@ -8,24 +8,24 @@ import com.example.colorist.fragments.ChoosingColorFragment
 import com.example.colorist.fragments.ColoristFragment
 import com.example.colorist.fragments.ColorsLearnFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-interface MyInterface{
+
+interface ColorInterface{
     fun openColor(colorView: ColorView)
-    fun makeCurrentFragment(fragment: Fragment): FragmentTransaction
 }
 
-class MainActivity : AppCompatActivity(),MyInterface {
+class MainActivity : AppCompatActivity(),ColorInterface {
 
-    private lateinit var bottomNavigation: BottomNavigationView
+    private lateinit var bottom_navigation: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val colorsLearnFragment = ColorsLearnFragment()
         val coloristFragment = ColoristFragment()
-        bottomNavigation = findViewById(R.id.bottom_navigation)
+        bottom_navigation = findViewById(R.id.bottom_navigation)
 
         makeCurrentFragment(colorsLearnFragment)
-        bottomNavigation.setOnNavigationItemSelectedListener {
+        bottom_navigation.setOnNavigationItemSelectedListener {
             when (it.itemId){
                 R.id.learn_colors -> makeCurrentFragment(colorsLearnFragment)
                 R.id.play_colorist -> makeCurrentFragment(coloristFragment)
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity(),MyInterface {
         }
     }
 
-    override fun makeCurrentFragment(fragment: Fragment) =
+    fun makeCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fl_wrapper, fragment)
             commit()

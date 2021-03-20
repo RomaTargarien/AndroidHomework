@@ -14,22 +14,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.colorist.*
 
-
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-
 class ColorsLearnFragment : Fragment() {
 
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var recycler_view_colors: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
@@ -37,22 +27,12 @@ class ColorsLearnFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.fragment_colors_learn, container,false)
-        root.findViewById<RecyclerView>(R.id.recycler_view).layoutManager =
-            LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
-        root.findViewById<RecyclerView>(R.id.recycler_view).adapter = ColorsAdapter(ColorsForm().colorsList){
-            (requireActivity() as MyInterface).openColor(it)
+        recycler_view_colors = root.findViewById(R.id.recycler_view_colors)
+        recycler_view_colors.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
+        recycler_view_colors.adapter = ColorsAdapter(ColorView.COLORS_LIST){
+            (requireActivity() as ColorInterface).openColor(it)
         }
         return root
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ColorsLearnFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }
+

@@ -3,15 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/learn_colors_fragment"
+    android:id="@+id/fragment_colors_learn"
     tools:context=".fragments.ColorsLearnFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+        android:id="@+id/recycler_view_colors"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="110dp"
         tools:layout_editor_absoluteY="148dp" />
-
 
 </FrameLayout>
