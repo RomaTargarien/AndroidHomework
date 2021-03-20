@@ -29,7 +29,7 @@ class ColorsLearnFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_colors_learn, container,false)
         recycler_view_colors = root.findViewById(R.id.recycler_view_colors)
         recycler_view_colors.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
-        recycler_view_colors.adapter = ColorsAdapter(ColorView.COLORS_LIST){
+        recycler_view_colors.adapter = ColorsAdapter(COLORS_LIST_2){
             (requireActivity() as ColorInterface).openColor(it)
         }
         return root
