@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrimarySecondTextStyle">
+        <item name="android:color">#AFABAB</item>
+        <item name="fontFamily">@font/bevan</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
