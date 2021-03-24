@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
+
+
+
     <androidx.core.widget.NestedScrollView
         android:layout_height="match_parent"
         android:layout_width="match_parent">
@@ -14,6 +16,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:context=".MainActivity">
+
+            <View
+                android:id="@+id/view_horiz"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="24dp"
+                android:alpha="0.3"
+                android:foreground="@drawable/ic_baseline_more_horiz_24"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.971">
+
+            </View>
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
@@ -50,11 +67,12 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:autoLink="web"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
+                android:autoLink="web"
+                android:textColorLink="#03A9F4"
                 android:text="https://www.instagram.com/bradpittofflcial/?hl=ru"
                 android:textSize="10sp"
                 app:layout_constraintStart_toEndOf="@+id/profile_image"
@@ -120,8 +138,9 @@
                 style="@style/PrimarySecondTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginTop="4dp"
+                android:fontFamily="@font/abel"
                 android:text="Posts"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -131,7 +150,7 @@
                 style="@style/PrimarySecondTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="56dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="4dp"
                 android:text="Followers"
                 app:layout_constraintStart_toEndOf="@+id/textView7"
@@ -143,7 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="48dp"
                 android:text="Following"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -165,22 +184,24 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button"
-                android:layout_width="288dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="16dp"
+                android:layout_width="269dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/button_gradient"
+                style="@style/PrimarySecondTextStyle"
+                android:textColor="@color/white"
                 android:text="Follow"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view2" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button2"
-                android:layout_width="65dp"
-                android:layout_height="48dp"
+                android:layout_width="64dp"
+                android:layout_height="41dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
-                android:background="#B5AFAF"
+                android:background="@drawable/message_button"
                 android:foreground="@drawable/ic_baseline_mail_outline_24"
                 android:foregroundGravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -191,7 +212,7 @@
                 android:layout_width="382dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -233,7 +254,8 @@
             android:id="@+id/floatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/add"
+            android:backgroundTint="#EA405F"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"
             app:layout_anchor="@+id/bottomAppBar">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>

@@ -2,7 +2,8 @@
 <resources>
     <style name="PrimarySecondTextStyle">
         <item name="android:color">#AFABAB</item>
-        <item name="fontFamily">@font/bevan</item>
+        <item name="fontFamily">@font/abel</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>
