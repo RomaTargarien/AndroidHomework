@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TittleTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textDirection">ltr</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/baloo_paaji</item>
+    </style>
+    <style name="DescriptionTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textDirection">ltr</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/karma_medium</item>
+    </style>
+    <style name="DateTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textDirection">rtl</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/baloo_paaji</item>
+    </style>
+
+    <style name="DayTextStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/baloo_paaji</item>
+    </style>
+    <style name="MonthTextStyle">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textDirection">rtl</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/karma_medium</item>
+    </style>
+    <style name="WeekDayTextStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textDirection">rtl</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/karma_medium</item>
+    </style>
+
+</resources>
